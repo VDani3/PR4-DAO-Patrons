@@ -1,0 +1,45 @@
+[
+    {
+        "id": 0,
+        "nom": "C",
+        "any": 1972,
+        "dificultad": "dificil",
+        "popularitat": "8"
+    },
+    {
+        "id": 1,
+        "nom": "C++",
+        "any": 1983,
+        "dificultad": "mitja",
+        "popularitat": "7"
+    },
+    {
+        "id": 2,
+        "nom": "Objective C",
+        "any": 1984,
+        "dificultad": "dificil",
+        "popularitat": "2"
+    },
+    {
+        "id": 3,
+        "nom": "JavaScript",
+        "any": 1995,
+        "dificultad": "facil",
+        "popularitat": "6"
+    },
+    {
+        "id": 4,
+        "nom": "Java",
+        "any": 1995,
+        "dificultad": "mitja",
+        "popularitat": "5"
+    },
+    {
+        "id": 5,
+        "nom": "Dart+Flutter",
+        "any": 2018,
+        "dificultad": "mitja",
+        "popularitat": "9"
+    }
+
+]
