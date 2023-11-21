@@ -1,15 +1,16 @@
+package com.project;
+
 import java.util.ArrayList;
 
 
 public class Main {
    public static String basePath = System.getProperty("user.dir") + "/";
-   public static String llenguatgesPath = basePath + "./dbProgramacio/llenguatges.json";
-   public static String einesPath = basePath + "./dbProgramacio/eines.json";
-   public static String softwarePath = basePath + "./dbProgramacio/software.json";
+   public static String llenguatgesPath = basePath + "./data/llenguatges.json";
+   public static String einesPath = basePath + "./data/eines.json";
+   public static String softwarePath = basePath + "./data/software.json";
 
 
    public static void main(String[] args) {
-
        DaoEina         daoEina = new DaoEina();
        DaoLlenguatge   daoLlenguatge = new DaoLlenguatge();
        DaoSoftware     daoSoftware = new DaoSoftware();
@@ -22,7 +23,6 @@ public class Main {
        ObjEina objEina0 = new ObjEina (5, "Text", 2000, aLlenguatges0);
        daoEina.add(objEina0);
 
-
        // Modificar una eina
        ArrayList<Integer> aLlenguatges1 = new ArrayList<>();
        aLlenguatges1.add(0);
@@ -31,22 +31,17 @@ public class Main {
        ObjEina objEina1 = new ObjEina (5, "TextEdit", 2001, aLlenguatges1);
        daoEina.update(5, objEina1);
 
-
        // Afegir llenguatge a eina
        daoEina.setLlenguatgesAdd(5, 3);
-
-
        // Treure llenguatge a eina
        daoEina.setLlenguatgesDelete(5, 2);
 
-
        // Llistar les eines
        daoEina.print();
-
+        
 
        // Esborrar eina amb id 5
        daoEina.delete(5);
-
 
        // Afegir un llenguatge
        ObjLlenguatge objLlenguatge0 = new ObjLlenguatge(5, "Dart", 2011, "facil", 8);
@@ -75,7 +70,6 @@ public class Main {
 
        // Esborrar llenguatge amb id 5
        daoLlenguatge.delete(5);
-
 
        // Afegir un software
        ArrayList<Integer> aLlenguatges2 = new ArrayList<>();

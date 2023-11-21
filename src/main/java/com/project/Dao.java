@@ -15,8 +15,4 @@ public interface Dao<T> {
 
     void print();
 
-    void setNom(int id, String Nom);
-
-    void setAny(int id, int any);
-
 }
